@@ -4,9 +4,8 @@ from time import sleep
 import requests
 from gpiozero import LED
 
-#Initialize pins
-pins = [0, 18, 21, 17, 4, 1, 22]
-leds = [LED(pin,active_high=False) for pin in pins]
+
+
 
 #Seven segment number configurations
 #      A
@@ -17,6 +16,10 @@ leds = [LED(pin,active_high=False) for pin in pins]
 #    -----
 #      D
 # [A,B,C,D,E,F,G]
+#Initialize pins
+pins = [0, 18, 21, 17, 4, 1, 22]
+leds = [LED(pin,active_high=False) for pin in pins]
+
 one = [0,1,1,0,0,0,0]
 two = [1,1,0,1,1,0,1]
 three = [1,1,1,1,0,0,1]
